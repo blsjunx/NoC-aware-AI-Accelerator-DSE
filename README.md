@@ -2,7 +2,6 @@
 
 AI 가속기 아키텍처를 대상으로 **Design Space Exploration (DSE)**를 수행하여
 성능을 개선한 프로젝트
-(Konkuk University, 2025)
 
 ---
 
