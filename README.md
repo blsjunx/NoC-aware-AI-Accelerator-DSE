@@ -13,7 +13,7 @@ core allocation과 placement를 최적화하는 것을 목표로 한다.
 
 대상 workload:
 
-* BERT 기반 matmul 연산
+* BERT 기반 연산
 
 ---
 
@@ -90,25 +90,11 @@ core allocation과 placement를 최적화하는 것을 목표로 한다.
 
 ## 결과
 
-| Model   | Throughput (TOPS) |
-| ------- | ----------------- |
-| Model_0 | 30.70             |
-| Model_1 | 38.09             |
-| Model_2 | 41.20             |
-
---> 약 **34% 성능 향상**
-
----
-
-## 파일 구성
-
-```id="tree03"
-.
-├── simple_dse.py
-├── configs/
-├── results/
-├── report.pdf
-```
+|     Model     | Throughput (TOPS) |
+| ------------- | ----------------- |
+| Layer group A | 30.70             |
+| Layer group B | 38.09             |
+| Layer group C | 41.20             |
 
 ---
 
@@ -116,4 +102,4 @@ core allocation과 placement를 최적화하는 것을 목표로 한다.
 
 자세한 분석 및 실험 결과는 보고서를 참고
 
-* TP_AS_project_report.pdf
+* TP_AS_submission.pdf
